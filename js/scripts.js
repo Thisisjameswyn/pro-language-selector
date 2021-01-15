@@ -7,9 +7,8 @@ $(document).ready(function() {
     const op4 = parseInt($("input:radio[name=question4]:checked").val());
     const op5 = parseInt($("input:radio[name=question5]:checked").val());
     const total = op1+op2+op3+op4+op5;
-    console.log(userName);
 
-    $("#name").text(userName);
+    $(".name").text(userName);
 
     if(total >= 9) {
       $(".welcome").hide();
@@ -19,7 +18,7 @@ $(document).ready(function() {
       $(".welcome").hide();
       $(".questions").hide();
       $("#answer2").toggle("slow");
-    }else if(total < 6){
+    }else if(total < 6) {
       $(".welcome").hide();
       $(".questions").hide();
       $("#answer3").toggle("slow");

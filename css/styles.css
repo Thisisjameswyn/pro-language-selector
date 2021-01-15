@@ -3,14 +3,15 @@
   padding: 20px;
 }
 
+.welcome h1{
+  text-decoration: underline;
+}
+
 .welcome p{
+  font-size: 20pt;
   box-sizing: content-box;
   padding: 20px;
   width:70%;
-}
-
-.welcome form{
-  display: inline-block;
 }
 
 .magicWord{
@@ -42,5 +43,7 @@ body{
 }
 
 .form-group{
-  width: 50%;
+  width: 40%;
+  padding: 20px;
+  font-size: 20px;
 }
