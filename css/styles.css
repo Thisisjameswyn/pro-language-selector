@@ -1,0 +1,15 @@
+.welcome{
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.welcome p{
+  box-sizing: content-box;
+  padding: 20px;
+  width:50%;
+}
+
+.welcome form{
+  display: inline-block;
+  max-lines: 1;
+}
