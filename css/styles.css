@@ -1,6 +1,7 @@
 .welcome{
   box-sizing: border-box;
   padding: 20px;
+  /* display: none; */
 }
 
 .welcome p{
@@ -11,5 +12,17 @@
 
 .welcome form{
   display: inline-block;
-  max-lines: 1;
+  ;
+}
+
+.magicWord{
+  display:none;
+}
+
+.question1{
+  display:none;
+}
+
+.question2{
+  display:none;
 }
