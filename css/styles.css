@@ -12,21 +12,13 @@
 
 .welcome form{
   display: inline-block;
-  ;
 }
 
 .magicWord{
   display:none;
 }
 
-/* .question1{
-  display:none;
+#answer1, #answer2, #answer3{
+  display: none;
 }
 
-.question2{
-  display:none;
-}
-
-.question3{
-  display:none;
-} */

@@ -1,32 +1,35 @@
 $(document).ready(function() {
   $("form#welcomeSelect").submit(function(event) {
-    const operator1 = $("input:radio[name=question1]:checked").val();
-    const operator2 = $("input:radio[name=question2]:checked").val();
-    const operator3 = $("input:radio[name=question3]:checked").val();
-    const operator4 = $("input:radio[name=question4]:checked").val(); 
-    
-    let button1
-    let button2
-    
-    if(operator1 === "yes") {
-      $(".question1").show();
-      $(".magicWord").hide();
+    const op1 = parseInt($("input:radio[name=question1]:checked").val());
+    const op2 = parseInt($("input:radio[name=question2]:checked").val());
+    const op3 = parseInt($("input:radio[name=question3]:checked").val());
+    const op4 = parseInt($("input:radio[name=question4]:checked").val());
+    const total = op1+op2+op3+op4;
+    console.log(total);
 
-    } else {
+    if(total >= 7) {
+      $("#answer1").show();
+    }else if(total < 7 && total > 4) {
+      $("#answer2").show();
+    }else if(total === 4){
+      $("#answer3").show();
+    }else {
       $(".magicWord").show();
-      $(".question1").hide();
-      $("#noBtn").hide();
     }
+    
+    // if(operator1 === "yes") {
+    //   $(".question1").show();
+    //   $(".magicWord").hide();
+
+    // } else {
+    //   $(".magicWord").show();
+    //   $(".question1").hide();
+    //   $("#noBtn").hide();
+    // }
 
     event.preventDefault();
   });
   $("form#reset").submit(function(event) {
     location.reload();
   });
-
-  // function questions() {
-  //   const operator = $("input:radio[name=operator]:checked").val();
-  //   console.log(operator);
-    
-  // }
 });
