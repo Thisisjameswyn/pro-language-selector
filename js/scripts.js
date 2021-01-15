@@ -1,14 +1,19 @@
 $(document).ready(function() {
   $("form#welcomeSelect").submit(function(event) {
-    const operator = $("input:radio[name=operator]:checked").val();
+    const operator1 = $("input:radio[name=question1]:checked").val();
+    const operator2 = $("input:radio[name=question2]:checked").val();
+    const operator3 = $("input:radio[name=question3]:checked").val();
+    const operator4 = $("input:radio[name=question4]:checked").val(); 
     
-    if(operator === "yes") {
+    let button1
+    let button2
+    
+    if(operator1 === "yes") {
       $(".question1").show();
-      $(".question2").hide();
-      questions();
+      $(".magicWord").hide();
 
     } else {
-      $(".question2").show();
+      $(".magicWord").show();
       $(".question1").hide();
       $("#noBtn").hide();
     }
@@ -19,7 +24,9 @@ $(document).ready(function() {
     location.reload();
   });
 
-  function questions() {
-    console.log("Keep Going!");
-  }
+  // function questions() {
+  //   const operator = $("input:radio[name=operator]:checked").val();
+  //   console.log(operator);
+    
+  // }
 });
