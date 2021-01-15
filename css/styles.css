@@ -1,13 +1,12 @@
 .welcome{
   box-sizing: border-box;
   padding: 20px;
-  /* display: none; */
 }
 
 .welcome p{
   box-sizing: content-box;
   padding: 20px;
-  width:50%;
+  width:70%;
 }
 
 .welcome form{
@@ -22,3 +21,22 @@
   display: none;
 }
 
+.btn-group{
+  columns: 12;
+  border: 1px solid red;
+  size: 100%;
+  float:left;
+  margin: 5px;
+}
+
+.question{
+  box-sizing:content-box;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid grey;
+  width: 50%;
+}
+
+body{
+  background-color: rgb(255, 242, 225);
+}

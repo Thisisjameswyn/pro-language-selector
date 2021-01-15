@@ -5,27 +5,24 @@ $(document).ready(function() {
     const op3 = parseInt($("input:radio[name=question3]:checked").val());
     const op4 = parseInt($("input:radio[name=question4]:checked").val());
     const total = op1+op2+op3+op4;
-    console.log(total);
 
     if(total >= 7) {
-      $("#answer1").show();
+      $(".welcome").hide();
+      $(".questions").hide();
+      $("#answer1").toggle("slow");
     }else if(total < 7 && total > 4) {
-      $("#answer2").show();
+      $(".welcome").hide();
+      $(".questions").hide();
+      $("#answer2").toggle("slow");
     }else if(total === 4){
-      $("#answer3").show();
+      $(".welcome").hide();
+      $(".questions").hide();
+      $("#answer3").toggle("slow");
     }else {
-      $(".magicWord").show();
+      $(".magicWord").toggle("slow");
+      $(".welcome").hide();
+      $(".questions").hide();
     }
-    
-    // if(operator1 === "yes") {
-    //   $(".question1").show();
-    //   $(".magicWord").hide();
-
-    // } else {
-    //   $(".magicWord").show();
-    //   $(".question1").hide();
-    //   $("#noBtn").hide();
-    // }
 
     event.preventDefault();
   });
