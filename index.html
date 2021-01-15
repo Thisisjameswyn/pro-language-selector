@@ -32,17 +32,20 @@
       <form id="welcomeSelect">
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="yes" checked>
+            <span id="yesBtn"><input type="radio" name="operator" value="yes"></span>
             <span id="posAnswer"></span>
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="operator" value="no">
+            <span id="noBtn"><input type="radio" name="operator" value="no"></span>
             <span id="negAnswer"></span>
           </label>
         </div>
         <button type="submit" class="btn">Well?</button>
+      </form>
+      <form id="reset">
+        <button type="submit" class="btn">Reset</button>
       </form>
     </div>
 
