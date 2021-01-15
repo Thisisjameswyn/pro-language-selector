@@ -40,3 +40,7 @@
 body{
   background-color: rgb(255, 242, 225);
 }
+
+.form-group{
+  width: 50%;
+}

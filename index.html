@@ -9,11 +9,10 @@
   </head>
   <body>
     <div class="container">
-      <!-- <div class ="row"> -->
       <div>
-        <h3 id="answer1">Try C#, that's for you!</h3>
-        <h3 id="answer2">Maybe JavaScript is the way to go.</h3>
-        <h3 id="answer3">Hmmmmm, Python I guess</h3>
+        <h3 id="answer1">Try C# <span class="name"></span>, that's for you!</h3>
+        <h3 id="answer2">Maybe JavaScript is the way to go <span class="name"></span>.</h3>
+        <h3 id="answer3">Hmmmmm <span class="name"></span>, Python I guess</h3>
       </div>
 
       <div class="welcome">
@@ -29,6 +28,11 @@
       <div class="selector">
         <div class="questions">
           <form id="welcomeSelect">
+
+            <div class="form-group">
+              <label for="name">Let's get started by entering your name and answering a few questions</label>
+              <input id="name" class="form-control" type="text">
+            </div>
           
             <div class="question">
               <h4>Do you like cats?</h4>
@@ -93,8 +97,24 @@
                 </label>
               </div>
             </div>
+
+            <div class="question">
+              <h4>Do you like rainbows?</h4>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question5" value="2">
+                  "Enough already!"
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="question5" value="1">
+                  "Never again..."
+                </label>
+              </div>
+            </div>
             <div class="btn-group">
-              <button type="submit" class="btn">Well?</button>
+              <button type="submit" class="btn">Get on with it</button>
             </div>
           </form>
         </div>
