@@ -1,10 +1,16 @@
 .welcome{
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
 }
 
 .welcome h1{
   text-decoration: underline;
+  padding-left: 5%;
+  float:left;
+  width: 80%;
+  height: 10%;
+  background-color: rgb(226, 145, 115);
+  margin: 10px;
 }
 
 .welcome p{
@@ -20,6 +26,7 @@
 
 #answer1, #answer2, #answer3{
   display: none;
+  padding: 50px;
 }
 
 .btn-group{
@@ -32,7 +39,8 @@
 
 .question{
   box-sizing:content-box;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 20px;
   margin: 10px;
   border: 1px solid grey;
   width: 50%;
@@ -44,6 +52,6 @@ body{
 
 .form-group{
   width: 40%;
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
 }
