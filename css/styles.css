@@ -31,10 +31,11 @@
 
 .btn-group{
   columns: 12;
-  border: 1px solid red;
+  border: 1px solid rgb(226, 145, 115);
   size: 100%;
   float:left;
   margin: 5px;
+  margin-bottom: 100px;
 }
 
 .question{
@@ -54,4 +55,8 @@ body{
   width: 40%;
   padding: 10px;
   font-size: 20px;
+}
+
+.question h4{
+  padding-left: 4%;
 }

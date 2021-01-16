@@ -1,120 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Program Selector</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <h2 id="answer1">Try C# <span class="name"></span>, that's for you!</h2>
-        <h2 id="answer2">Maybe JavaScript is the way to go <span class="name"></span>.</h2>
-        <h2 id="answer3">Hmmmmm <span class="name"></span>, Python I guess</h2>
-      </div>
-      <div class="welcome">
-        <h1>What programming language are you?</h1>
-        <p>Like many others I'm sure you're curious as to which programming language best represents you.  This question has plagued philosophers and the wise for as long as history can remember, but what if I told you there is finally a way to get an answer?</p>
-      </div>
-      <div class="magicWord">
-        <h1>NOPE</h1>
-        <img src="img/c5af821f4f82523ed92d1315ec578846.jpg" alt="You didn't say the magic word"> 
-      </div>
-      <div class="selector">
-        <div class="questions">
-          <form id="welcomeSelect">
-            <div class="form-group">
-              <label for="name">Let's get started by entering your name and answering a few questions</label>
-              <input id="name" class="form-control" type="text">
+
+<head>
+  <title>Program Selector</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h2 id="answer1">Try C# <span class="name"></span>, that's for you!</h2>
+      <h2 id="answer2">Maybe JavaScript is the way to go <span class="name"></span>.</h2>
+      <h2 id="answer3">Hmmmmm <span class="name"></span>, Python I guess</h2>
+    </div>
+    <div class="welcome">
+      <h1>What programming language are you?</h1>
+      <p>Like many others I'm sure you're curious as to which programming language best represents you. This question
+        has plagued philosophers and the wise for as long as history can remember, but what if I told you there is
+        finally a way to get an answer?</p>
+    </div>
+    <div class="magicWord">
+      <h1>Feed me your answers!</h1>
+      <img src="img/c5af821f4f82523ed92d1315ec578846.jpg" alt="You didn't say the magic word">
+    </div>
+    <div class="selector">
+      <div class="questions">
+        <form id="welcomeSelect">
+          <div class="form-group">
+            <label for="name">Let's get started by entering your name and answering a few questions</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="question">
+            <h4>Do you like cats?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question1" value="2">
+                "Sure Do!"
+              </label>
             </div>
-            <div class="question">
-              <h4>Do you like cats?</h4>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question1" value="2">
-                  "Sure Do!"
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question1" value="1">
-                  "Hate 'em"
-                </label>
-              </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question1" value="1">
+                "Hate 'em"
+              </label>
             </div>
-            <div class="question">
-              <h4>Do you like Dogs?</h4>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question2" value="2">
-                  "Who doesn't?"
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question2" value="1">
-                  "I hate love."
-                </label>
-              </div>
+          </div>
+          <div class="question">
+            <h4>Do you like Dogs?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question2" value="2">
+                "Who doesn't?"
+              </label>
             </div>
-            <div class="question">
-              <h4>Do you like hats?</h4>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question3" value="2">
-                  "Well sure I guess."
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question3" value="1">
-                  "Never really thought about it..."
-                </label>
-              </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question2" value="1">
+                "I hate love."
+              </label>
             </div>
-            <div class="question">
-              <h4>Do you like logs?</h4>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question4" value="2">
-                  "Like fallen trees?"
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question4" value="1">
-                  "Rediculous!"
-                </label>
-              </div>
+          </div>
+          <div class="question">
+            <h4>Do you like hats?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question3" value="2">
+                "Well sure I guess."
+              </label>
             </div>
-            <div class="question">
-              <h4>Do you like rainbows?</h4>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question5" value="2">
-                  "Enough already!"
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="question5" value="1">
-                  "Never again..."
-                </label>
-              </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question3" value="1">
+                "Never really thought about it..."
+              </label>
             </div>
-            <div class="btn-group">
-              <button type="submit" class="btn">Get on with it</button>
+          </div>
+          <div class="question">
+            <h4>Do you like logs?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question4" value="2">
+                "Like fallen trees?"
+              </label>
             </div>
-          </form>
-        </div>
-        <form id="reset">
+            <div class="radio">
+              <label>
+                <input type="radio" name="question4" value="1">
+                "Rediculous!"
+              </label>
+            </div>
+          </div>
+          <div class="question">
+            <h4>Do you like rainbows?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question5" value="2">
+                "Enough already!"
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question5" value="1">
+                "Never again..."
+              </label>
+            </div>
+          </div>
           <div class="btn-group">
-           <button type="submit" class="btn">Reset</button>
+            <button type="submit" class="btn">Get on with it</button>
           </div>
         </form>
-      </div>  
+      </div>
+      <form id="reset">
+        <div class="btn-group">
+          <button type="submit" class="btn">Reset</button>
+        </div>
+      </form>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
