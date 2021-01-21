@@ -26,4 +26,4 @@ This is my second week coding project for Epicodus.  The objective is to make a 
 ## License
 
 *[MIT License](https://opensource.org/licenses/MIT)
-&copy; James Wyn 2020
+&copy; James Wyn 2021
